@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cellular_Product_Sold__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Cellular Product Sold</label>
+    <referenceTo>Cellular_Product_Sold__c</referenceTo>
+    <relationshipLabel>Cellular Product Solds</relationshipLabel>
+    <relationshipName>Cellular_Product_Solds</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

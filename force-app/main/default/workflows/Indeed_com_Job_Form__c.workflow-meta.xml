@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Rejection_email</fullName>
+        <description>Rejection email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Candidate_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Form_rejection_email_template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Staffing_status_update</fullName>
+        <field>Staffing_status__c</field>
+        <formula>&quot;Sorry, you have less experience&quot;</formula>
+        <name>Staffing status update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>WFR_Indeed%2Ecom</fullName>
+        <actions>
+            <name>Rejection_email</name>
+            <type>Alert</type>
+        </actions>
+        <actions>
+            <name>Staffing_status_update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Return_the_passport_of_the_candidate</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Indeed_com_Job_Form__c.Preferred_Country__c</field>
+            <operation>equals</operation>
+            <value>USA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Indeed_com_Job_Form__c.Experience__c</field>
+            <operation>lessThan</operation>
+            <value>5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Indeed_com_Job_Form__c.Salary_Expected__c</field>
+            <operation>greaterThan</operation>
+            <value>10000</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Return_the_passport_of_the_candidate</fullName>
+        <assignedTo>riteomkar4545@gsm.com</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>Return the passport of the candidate asap.</description>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Return the passport of the candidate</subject>
+    </tasks>
+</Workflow>

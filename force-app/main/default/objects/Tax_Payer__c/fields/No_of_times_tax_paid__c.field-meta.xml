@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_of_times_tax_paid__c</fullName>
+    <externalId>false</externalId>
+    <label>No of times tax paid in 2021</label>
+    <summaryFilterItems>
+        <field>Tax_Paid_per_month__c.Year__c</field>
+        <operation>equals</operation>
+        <value>2021</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Tax_Paid_per_month__c.Tax_Payer__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

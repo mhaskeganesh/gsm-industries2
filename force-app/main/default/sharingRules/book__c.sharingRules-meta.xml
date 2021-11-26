@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Book_Sharing_rules</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Book Sharing rules</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>contains</operation>
+            <value>a</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+</SharingRules>

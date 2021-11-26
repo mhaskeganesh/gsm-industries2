@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deals_without_vendors</fullName>
+    <columns>NAME</columns>
+    <columns>Vendor__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Vendor__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>Deals without vendors</label>
+</ListView>

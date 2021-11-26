@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_List_View</fullName>
+    <columns>NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>1</value>
+    </filters>
+    <label>Test List View</label>
+    <sharedTo>
+        <group>GSM_Managers_group</group>
+    </sharedTo>
+</ListView>

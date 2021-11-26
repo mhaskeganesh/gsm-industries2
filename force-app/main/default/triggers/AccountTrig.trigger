@@ -10,4 +10,4 @@ trigger AccountTrig on Account (before insert, after insert, after update) {
     if(Trigger.isBefore && Trigger.isInsert){
         AccountTrigHandler.createClientContact(Trigger.new);
     }
-}//added
+}
