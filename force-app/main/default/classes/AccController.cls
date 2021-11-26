@@ -4,7 +4,7 @@ public class AccController {
     public static list<Account> searchAcc(String key){
         String key2 = '%'+key+'%';
         System.debug(key);
-        list<Account> ls = [ select id,name from Account where name like :key2 limit 10];
+        list<Account> ls = [ select id,name from Account where name like :key2 limit 10];// added comment
         System.debug(ls);
         return ls;
     }
