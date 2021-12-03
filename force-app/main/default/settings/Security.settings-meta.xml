@@ -24,6 +24,10 @@
             <end>103.126.72.2</end>
             <start>103.126.72.2</start>
         </ipRanges>
+        <ipRanges>
+            <end>14.140.121.206</end>
+            <start>14.140.121.206</start>
+        </ipRanges>
     </networkAccess>
     <passwordPolicies>
         <complexity>AlphaNumeric</complexity>

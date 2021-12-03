@@ -323,6 +323,11 @@
             <field>Client_Contact__c</field>
             <table>Account</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_sales_quantities__c</field>
+            <table>Account</table>
+        </columns>
         <masterLabel>Accounts</masterLabel>
     </sections>
     <sections>
