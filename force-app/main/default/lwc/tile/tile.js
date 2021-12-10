@@ -12,3 +12,4 @@ export default class Tile extends LightningElement {
         this.dispatchEvent(event);
     }
 }
+ 
