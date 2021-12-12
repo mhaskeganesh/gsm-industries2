@@ -1,15 +1,33 @@
 import {LightningElement} from 'lwc';
-import STUDENT__C_OBJECT from '@salesforce/schema/Student__C';
-import STUDENT__C_ID from '@salesforce/schema/Student__C.Id';
-import STUDENT__C_Name from '@salesforce/schema/Student__C.Name';
-import Teacher from '@salesforce/schema/Student__C.Teacher__c';
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import ob from '@salesforce/schema/Student__C';
+import i from '@salesforce/schema/Student__C.Id';
+import sname from '@salesforce/schema/Student__C.Name';
+import t from '@salesforce/schema/Student__C.Teacher__c';
 
 export default class DisplayStudents extends LightningElement{
-student = STUDENT__C_OBJECT;
-stuFields = [STUDENT__C_ID, STUDENT__C_Name, Teacher];
+student = ob;
+stuFields = [ sname, t];
 
 handleSuccess(event){
-alert('Record got created successfully...ID : '+event.detail.Id);
+    //alert('changes done2....Record got created successfully...ID : '+event.detail.id);
+    alert('Inside');
+    const toast = new ShowToastEvent({
+        title : "Student Record Created",
+        message : "Record id - "+event.detail.id,
+        variant : "success"
+    });
+
+    /*  const toastEvent = new ShowToastEvent({
+            title: "Student created",
+            message: "Record ID: " + event.detail.id,
+            variant: "success"
+        });
+        this.dispatchEvent(toastEvent);*/
+
+    alert('there only22...');
+    this.dispatchEvent(toast);
+    alert('Exit');
 }
 
 
