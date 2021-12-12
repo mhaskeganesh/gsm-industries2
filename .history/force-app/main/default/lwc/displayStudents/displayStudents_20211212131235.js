@@ -6,7 +6,7 @@ import Teacher from '@salesforce/schema/Student__C.Teacher__c';
 
 export default class DisplayStudents extends LightningElement{
 student = STUDENT__C_OBJECT;
-stuFields = [STUDENT__C_ID, STUDENT__C_Name, Teacher];
+stuFields = [STUDENT__C_ID, STUDENT__C_Name];
 
 handleSuccess(event){
 alert('Record got created successfully...ID : '+event.detail.Id);
