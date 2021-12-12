@@ -20,10 +20,10 @@ export default class MyFirstLwcComponent extends LightningElement {
         //alert("I am inside wire method");
         if(data){
             this.result = data;
-            //alert(this.result);
+            alert(this.result);
         }
         else if(error){
-            //alert("We got an error");
+            alert("We got an error");
         }
     }
 }
