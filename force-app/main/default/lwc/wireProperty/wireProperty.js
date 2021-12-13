@@ -8,9 +8,9 @@ export default class WireProperty extends LightningElement {
     @wire(getRecord, {recordId : '$recordId', fields : [accName]})
     account;
 
-    /*get name(){
+    get name(){
         return getFieldValue(this.account.data, accName);
-    }*/
-     name = 'Changed'+this.account.fields.Name.value;
+    }
+    // name = 'Changed'+this.account.fields.Name.value;
     
 }
