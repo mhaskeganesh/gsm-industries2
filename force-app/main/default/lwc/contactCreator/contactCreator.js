@@ -1,9 +1,9 @@
 import { LightningElement } from 'lwc';
 import ShowToastEvent from 'lightning/platformShowToastEvent';
-import objName1 from '@salesforce/schema/contact';
-import firstName from '@salesforce/schema/contact.FirstName';
-import lastName from '@salesforce/schema/contact.LastName';
-import email from '@salesforce/schema/contact.Email';
+import objName1 from '@salesforce/schema/Contact';
+import firstName from '@salesforce/schema/Contact.FirstName';
+import lastName from '@salesforce/schema/Contact.LastName';
+import email from '@salesforce/schema/Contact.Email';
 
 export default class ContactCreator extends LightningElement {
     objName = objName1;
@@ -18,4 +18,4 @@ export default class ContactCreator extends LightningElement {
 
         this.dispatchEvent(toast);
     }
-} 
+}

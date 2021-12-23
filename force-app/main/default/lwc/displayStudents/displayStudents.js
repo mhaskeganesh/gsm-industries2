@@ -1,9 +1,9 @@
 import {LightningElement} from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
-import ob from '@salesforce/schema/Student__C';
-import i from '@salesforce/schema/Student__C.Id';
-import sname from '@salesforce/schema/Student__C.Name';
-import t from '@salesforce/schema/Student__C.Teacher__c';
+import ob from '@salesforce/schema/Student__c';
+import i from '@salesforce/schema/Student__c.Id';
+import sname from '@salesforce/schema/Student__c.Name';
+import t from '@salesforce/schema/Student__c.Teacher__c';
 
 export default class DisplayStudents extends LightningElement{
 student = ob;

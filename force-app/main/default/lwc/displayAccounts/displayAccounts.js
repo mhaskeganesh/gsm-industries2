@@ -21,5 +21,4 @@ export default class DisplayAccounts extends LightningElement {
         }
         //sendAccounts().then(result => {this.accounts=result; alert(this.accounts)}).catch(error => {alert(error)});
     }
-   
-}  
+}

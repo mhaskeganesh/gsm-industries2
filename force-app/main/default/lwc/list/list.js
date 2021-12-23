@@ -13,4 +13,3 @@ export default class List extends LightningElement {
         this.dispatchEvent(event);
     }
 }
- 

@@ -17,8 +17,16 @@
             <start>192.168.1.1</start>
         </ipRanges>
         <ipRanges>
+            <end>103.126.72.31</end>
+            <start>103.126.72.31</start>
+        </ipRanges>
+        <ipRanges>
             <end>103.126.72.14</end>
             <start>103.126.72.14</start>
+        </ipRanges>
+        <ipRanges>
+            <end>103.126.72.3</end>
+            <start>103.126.72.3</start>
         </ipRanges>
         <ipRanges>
             <end>103.126.72.2</end>

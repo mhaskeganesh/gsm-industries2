@@ -1,3 +1,3 @@
 <aura:application >
-    <c:MyAura1 />
+    <c:eachRecord />
 </aura:application>

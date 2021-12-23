@@ -40,6 +40,7 @@
     <tabs>Mobile__c</tabs>
     <tabs>Invoice2__c</tabs>
     <tabs>Invoice_Line_Item__c</tabs>
+    <tabs>Knowledge__kav</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -93,6 +94,9 @@
         </mappings>
         <mappings>
             <tab>Job_Position__c</tab>
+        </mappings>
+        <mappings>
+            <tab>Knowledge__kav</tab>
         </mappings>
         <mappings>
             <tab>Mobile__c</tab>

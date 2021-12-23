@@ -38,4 +38,5 @@
     <tabs>Mobile__c</tabs>
     <tabs>Invoice2__c</tabs>
     <tabs>Invoice_Line_Item__c</tabs>
+    <tabs>Knowledge__kav</tabs>
 </CustomApplication>

@@ -133,6 +133,14 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>AccountController2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AccountController3</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>AccountHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -146,6 +154,14 @@
     </classAccesses>
     <classAccesses>
         <apexClass>AccountUtility</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AccountsSender</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>AnimalsCallouts</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -178,6 +194,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>ContactAndLeadSearch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ContactController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -242,6 +262,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>ListDemo</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>LwcController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
